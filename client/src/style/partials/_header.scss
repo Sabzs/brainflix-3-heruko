@@ -1,0 +1,169 @@
+.header {
+  @include mobile {
+    @include flex-justifyDirection(center, column);
+    width: 100%;
+    height: 10.5625rem;
+    &__logoDiv {
+      display: flex;
+      justify-content: center;
+      height: 3rem;
+      width: 100%;
+      a {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 0.3rem 0;
+        img {
+          display: flex;
+          object-fit: contain;
+        }
+      }
+    }
+    &__searchUpload {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &__searchDiv {
+      display: flex;
+      width: 100%;
+    }
+    &__searchInput {
+      display: flex;
+      @include fonts(0.75rem, 1.25rem, none);
+      padding-left: 1rem;
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.25rem;
+      border: none;
+      border: 1px solid $color-silver;
+    }
+    &__upload-mohead {
+      display: flex;
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    &__btnDiv {
+      display: flex;
+      width: 80%;
+      margin-right: 1rem;
+      a {
+        text-decoration: none;
+        width: 100%;
+      }
+    }
+    &__btn {
+      @include flex-justifyAlign(center, center);
+      @include fonts(0.75rem, 1.25rem, bold);
+      width: 100%;
+      height: 3rem;
+      border-radius: 0.25rem;
+      border: none;
+      color: $color-white;
+      background-color: $secondary-color;
+      &:hover {
+        cursor: pointer;
+        background-color: $color-hover;
+      }
+    }
+    &__moheadDiv {
+      display: flex;
+      justify-content: center;
+      width: 20%;
+    }
+    &__mohead-img {
+      display: flex;
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  @include tablet {
+    @include flex-justifyDirection(center, row);
+    align-items: center;
+    height: 5rem;
+    &__logoDiv {
+      width: 30%;
+    }
+    &__searchUpload {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 10.5625rem;
+      width: 70%;
+    }
+    &__upload-mohead {
+      align-items: center;
+      margin: 0px 0px 0px 1.5rem;
+    }
+    &__btnDiv {
+      display: flex;
+      width: 60%;
+      margin-right: 1.5rem;
+    }
+    &__moheadDiv {
+      width: 30%;
+    }
+    &__mohead-img {
+      display: flex;
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  @include laptop {
+    &__logoDiv {
+      a {
+        padding: 0;
+      }
+    }
+    &__searchUpload {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 10.5625rem;
+      width: 70%;
+    }
+    &__upload-mohead {
+      align-items: center;
+      margin: 0px 0px 0px 1.5rem;
+    }
+    &__btnDiv {
+      display: flex;
+      width: 60%;
+      margin-right: 1.5rem;
+    }
+    &__moheadDiv {
+      width: 30%;
+    }
+    &__mohead-img {
+      display: flex;
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  @include desktop {
+    &__logoDiv {
+      a {
+        padding: 0;
+      }
+    }
+    &__searchUpload {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 31.8125rem;
+    }
+    &__btnDiv {
+      width: 60%;
+      margin-right: 0;
+    }
+    &__upload-mohead {
+      justify-content: space-between;
+      width: 70%;
+    }
+  }
+}
