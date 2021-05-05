@@ -27,8 +27,6 @@ export class CommentForm extends Component {
                   type="text"
                   placeholder="name"
                   name="name"
-                  // value={this.state.name}
-                  // onChange={this.handleChange}
                 />
               </div>
               <div className="form__textareaDiv">
@@ -38,8 +36,6 @@ export class CommentForm extends Component {
                   rows="5"
                   placeholder="message"
                   name="message"
-                  // value={this.state.message}
-                  // onChange={this.handleChange}
                 ></textarea>
               </div>
             </div>
